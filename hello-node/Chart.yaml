@@ -1,0 +1,9 @@
+name: hello-node
+from:
+  name: hello-node
+  version: 0.1.0
+repo: https://git.gree-dev.net/z-shota-kitazawa/charts
+home: https://helm.sh/
+version: 0.1.0
+
+description: helm test

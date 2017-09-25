@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    name: {{.Values.name}}
+  name: {{.Values.name}}
+spec:
+  replicas: {{.Values.replicaCount}}
+  template:
+    metadata:
+      labels:
+        name: {{.Values.name}}
+    spec:
+      containers:
+      - image: asia.gcr.io/gree-eval-infra-alpha/hello-node:{{.Values.version}}
+        name: {{.Values.name}}
+        ports:
+        - containerPort: {{.Values.port}}
+

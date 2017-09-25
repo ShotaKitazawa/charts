@@ -1,0 +1,4 @@
+replicaCount: 1
+name: "hello-node"
+version: v1
+port: 8080
